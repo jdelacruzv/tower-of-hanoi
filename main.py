@@ -9,8 +9,9 @@ rods = {
 
 def move(n, source, auxiliary, target):
 	# Display starting configuration
-	for n in range(0, number_of_moves):
-		print(n)
+	for i in range(0, number_of_moves):
+		if (i + 1) % 3 == 1:
+			print(f'Move {i + 1} allowed between {source} and {target}')
 	print(rods)
 
 # Initiate call from source A to target C with auxiliary B
