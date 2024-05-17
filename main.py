@@ -10,7 +10,8 @@ rods = {
 def move(n, source, auxiliary, target):
 	# Display starting configuration
 	for i in range(0, number_of_moves):
-		if (i + 1) % 3 == 1:
+		remainder = (i + 1) % 3
+		if remainder == 1:
 			print(f'Move {i + 1} allowed between {source} and {target}')
 	print(rods)
 
